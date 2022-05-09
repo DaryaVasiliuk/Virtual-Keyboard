@@ -1,0 +1,145 @@
+
+
+body{
+    font-family: 'Arimo', sans-serif;
+    text-align: center;
+}
+
+.container {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title{
+    text-align: center;
+    color:darkblue
+}
+
+.input{
+    border-radius: 10px;
+    padding: 10px;
+    width: 700px;
+    height: 200px;
+    resize: none;
+    outline: none;
+    border: none;
+    font-size: 34px;
+    color: #25085a;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px #25085a;
+    margin-bottom: 10px;
+}
+
+/* .letter:hover{
+    background-color:#606aee ;
+} */
+
+.keyboard{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 8px;
+    width: 690px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #25085a;
+    padding: 6px;
+}
+
+.row{
+    display: flex;
+    gap: 6px;
+    justify-content: space-between;
+}
+
+.key{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    background-color: rgb(170, 255, 255);
+    color: #25085a;
+    box-shadow: 0px 0px 20px #25085a;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.key:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.key:active {
+    transform: scale(0.95, 0.95);
+    background-color: #606aee;
+}
+
+.active{
+    transform: scale(0.95, 0.95);
+    background-color: #606aee;
+}
+
+.key:focus{
+    outline: none;
+}
+
+.key-active{
+    transform: scale(0.95, 0.95);
+    background-color: #606aee;
+}
+
+.tilda{
+    width: 40px;
+}
+
+.key_backspace{
+    width: 92px;
+}
+
+.key_tab{
+    width: 50px;
+}
+
+.key_del{
+    width: 46px;
+}
+
+.CapsLock{
+    position: relative;
+    width: 100px;
+}
+
+.key_caps::after{
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.key_enter{
+    width: 78px;
+}
+
+.key_leftshift{
+    width: 92px;
+}
+
+.key_rightshift{
+    width: 86px;
+}
+
+.key_space{
+    width: 322px;
+}
+
+.key_ctrl{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
